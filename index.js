@@ -4,6 +4,15 @@ const mobile_nav = document.querySelectorAll('mobile-nav-icon');
 
 const nav_bar_links = document.querySelectorAll('navbar-links');
 
+const btn_lrn = document.querySelector('.btn-learn');
+
+btn_lrn.addEventListener("click",()=> redirectToMyAccount());
+
+
+const redirectToMyAccount = () =>{
+    window.open("./myaccount.html",'_blank' );
+    
+};
 
 
 const toggleNavbar =() =>{
