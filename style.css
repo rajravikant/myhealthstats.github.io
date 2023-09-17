@@ -192,6 +192,12 @@ header {
   .section-info {
     gap: 30px;
   }
+
+  #fit{
+    color: rgba(255, 255, 255, 0);
+  text-shadow: 0em 0em 3em #83ff00, 0em 0em 2em #83ff00, 1px 1px 5px #83ff00,
+    0px 0px 15px #83ff00, 1px 0px 0px white, -1px 0px 2px rgba(0, 0, 0, 0.5);
+  }
 }
 
 #head-title {
