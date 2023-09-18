@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/myaccount.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <!-- signup -->
+        <div class="signup-container  ">
+          <div class="container-heading">
+            <h1>Sign Up</h1>
+          </div>
+
+          <div class="forms">
+            <form class="form-register">
+              <div class="input-username">
+                <span class="icon"
+                  ><ion-icon name="person-outline"></ion-icon
+                ></span>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="First name"
+                />
+              </div>
+              <div class="input-username">
+                <span class="icon"
+                  ><ion-icon name="person-outline"></ion-icon
+                ></span>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="lastname"
+                />
+              </div>
+
+              <div class="input-username">
+                <span class="icon"
+                  ><ion-icon name="mail-outline"></ion-icon
+                ></span>
+                <input
+                  type="email"
+                  name="email"
+                  id="email" autocomplete="email"
+                  placeholder="email id"
+                />
+              </div>
+
+              <div class="input-username">
+                <span class="icon"
+                  ><ion-icon name="call-outline"></ion-icon
+                ></span>
+                <input
+                  type="text" id="phonenumber"
+                  class="phonenumber"
+                  placeholder="phone number"
+                />
+              </div>
+
+              <div class="input-username">
+                <span class="icon"
+                  ><ion-icon name="lock-closed-outline"></ion-icon
+                ></span>
+                <input
+                  type="password"
+                  name="pass"
+                  id="password"
+                  placeholder="password"
+                />
+              </div>
+
+              <div class="input-username">
+                <span class="icon"
+                  ><ion-icon name="lock-closed-outline"></ion-icon
+                ></span>
+                <input
+                  type="password"
+                  name="c_pass"
+                  id="c_password"
+                  placeholder="confirm password"
+                />
+              </div>
+
+              <div id="terms-check">
+                <input type="checkbox" name="checkbox" id="check" />
+                <label for="check">I agree to terms and conditions</label>
+              </div>
+
+              <input
+                type="button"
+                value="create account"
+                id="btn-create"
+                class="btns"
+              />
+            </form>
+          </div>
+          <div class="exist-already">
+            <p>already have an account? <a  id="login-click">Sign In</a></p>
+          </div>
+        </div>
+        <!-- signup -->
+
+        <!-- sign in  -->
+        <div class="signin-container active">
+          <div class="container-heading">
+            <h1>SIgn in</h1>
+          </div>
+
+          <div class="forms">
+            <form class="form-login form-register">
+              <div class="input-username">
+                <span class="icon"
+                  ><ion-icon name="mail-outline"></ion-icon
+                ></span>
+                <input
+                  type="email"
+                  name="eid"
+                  id="eid"
+                  placeholder="email id" autocomplete="email"
+                />
+              </div>
+
+              <div class="input-password">
+                <span class="icon"
+                  ><ion-icon name="lock-closed-outline"></ion-icon
+                ></span>
+                <input
+                  type="password"
+                  name="pass"
+                  id="pass"
+                  placeholder="password"
+                />
+                <span class="forget-pass">
+                  <p class="fp-p"><a href="#">forgot password?</a></p>
+                </span>
+              </div>
+              <input type="button" value="Login" id="btn-login" />
+            </form>
+            <div class="exist-already">
+              <p>dont have an account? <a id="register_new">Sign up</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sign in  -->
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="../scripts/myaccount.js"></script>
+  </body>
+</html>

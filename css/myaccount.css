@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(
+    circle at -1% 57.5%,
+    rgb(19, 170, 82) 0%,
+    rgb(0, 102, 43) 90%
+  );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ======================== */
+
+/* transition */
+/* animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s; */
+@keyframes reveal {
+  0% {
+    transform: translate(0, 800px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* ======================== */
+
+.wrapper {
+  height: 650px;
+  width: 400px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+   
+   display: flex;
+    justify-content: center ;
+    align-items:flex-start;
+}
+
+.signup-container {
+
+    display: none;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 20px 10px;
+  text-align: center;
+}
+
+.signin-container{
+
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 10px 20px 10px;
+  text-align: center;
+}
+
+
+.container-heading h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: green;
+  font-weight:900;
+  letter-spacing: 2px;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-top: 20px;
+}
+
+
+
+
+.form-register input {
+  width: 300px;
+  height: 35px;
+  border: none;
+  border-bottom: 2px solid rgb(19, 170, 82);
+  background: rgba(162, 160, 160, 0.084);
+  font-size: 15px;
+  border-radius: 2px;
+  outline: none;
+}
+
+.input-username .icon {
+    position: absolute;
+    margin-left: -23px;
+    margin-top: 9px;
+
+}
+
+.input-password .icon{
+    position: absolute;
+    margin-left: -23px;
+    margin-top: 9px;
+
+}
+
+#terms-check input {
+  height: 12px;
+  width: 15px;
+}
+
+.exist-already {
+  padding-top: 10px;
+  text-align: center;
+}
+
+#btn-create {
+    color: #ffffff;
+    background-color: #0a0a0a;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-bottom: none;
+  border: 2px black solid;
+  box-shadow: 0 0 2px 0.5px darkgray;
+  transition: 0.2s transform ease-in-out;
+  z-index: 0;
+}
+
+#btn-create::after{
+    transform :translate(-100%, 0) rotate(10deg);
+    transition :.2s transform ease-out;
+}
+
+#btn-create:hover{
+    background: radial-gradient(
+        circle at -1% 57.5%,
+        rgb(19, 170, 82) 0%,
+        rgb(2, 135, 57) 90%
+      );
+      border: none;
+    transform: scale(1.05);
+    
+}
+
+#btn-create:hover::after{
+    transform: translate(0, 0);
+}
+
+#btn-login{
+    border-bottom: none;
+    background: radial-gradient(
+        circle at -1% 57.5%,
+        rgb(19, 170, 82) 0%,
+        rgb(2, 135, 57) 90%
+      );
+      box-shadow: 0 0 3px 0.5px rgba(0, 0, 0, 0.759);
+      color: white;
+      transition: .3s ease-in-out;
+}
+
+#btn-login:hover{
+    transform: scale(1.05);
+    
+}
+
+.exist-already a{
+    color: green;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.forget-pass a{
+    color: green;
+    text-decoration: none;
+}
+
+.forget-pass p{
+    /* padding: 5px; */
+    font-size: 12px;
+    text-align: right;
+    position: relative;
+    padding-top: 5px;
+
+}
+
+.active{
+    display: block;
+}
+
