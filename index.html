@@ -3,37 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css"/>
-
+    <link rel="stylesheet" href="css/style.css" />
     <title>My Health Stats</title>
   </head>
-
   <body>
-    <header class="header">
+    
+    <!-- =============   NAVBAR - SECTION   =============== -->
+
+    <header class="header ">
       <!-- <img src="./bgimages/Pregnant Man.png" alt="website logo" class="logo"> -->
       <div class="logo">MyHealthStats</div>
       <nav class="navbar">
         <ul class="navbar-list">
           <li><a href="#homepage">Home</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="#service-s">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="">health tools ></a>
+                        <ul>
+                          <li><a href="#">Protein </a></li>
+                          <li><a href="#">BMI</a></li>
+                          <li><a href="#">Body fat</a></li>
+                          <li><a href="#">Calorie calculator</a></li>
+                        </ul>
+          </li>
+          <li><a href="#">About</a></li>
           <li><a href="#last-navi">Contact</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="../pages/myaccount.html">My Account</a></li>
+          <li><a href="pages/myaccount.html">Account</a></li>
         </ul>
       </nav>
 
       <div class="mobile-nav-bar">
-        <img
-          src=".\bgimages\menu-big.png"
-          alt="hamburger"
-          class="mobile-nav-icon"
-          id="menu"
-          onclick="toggleNavbar()"
-        />
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
       </div>
     </header>
 
+    <!-- =============   NAVBAR - SECTION   =============== -->
+
     <main>
+      <!-- =============   INFO - SECTION   =============== -->
+
       <section class="section-info" id="homepage">
         <div id="head-title">
           <h1>WELCOME TO MY HEALTH STATS</h1>
@@ -52,258 +61,449 @@
           </p>
         </div>
 
-     
-
         <div class="button-section">
           <button class="btn-learn">Sign Up</button>
           <button class="btn-Start btn-learn">Start Now</button>
         </div>
       </section>
-    </main>
 
-    <section class="current-health-stats">
-      <div class="content-stats-heading">
-        <h1>Current Health Stats of India</h1>
-      </div>
+      <!-- =============   INFO - SECTION   =============== -->
 
-      
-      
-      <div class="health-stats-main-container">
-      
-      <div class="card-health-container">
-            <div class="card-heading">
-                <h3>Healthy<h3>
-            </div>
-            <div class="logo">
-                <img src="./bgimages/Green Heart.png" alt="text">
-            </div>
-            <div class="card-value">
-                <p>20%</p>
-            </div>
+
+      <!-- =============   TYPED JS  - SECTION   =============== -->
+
+      <section class="section-art">
+        <div class="container-hs">
+          <div class="ch-title">BE <br /><span id="element"></span></div>
         </div>
+      </section>
+
+      <!-- =============   TYPED JS  - SECTION   =============== -->
+
+
+
+      <!-- =============   SERVICE - SECTION   =============== -->
+
+      <section class="section-services" id="service-s">
+
+        <div class="abt-heading" >
+          <h1 >Our Services</h1>
+            <span>   We offers a wide range of comprehensive fitness guides that cater to
+              different needs, whether it's weight loss, muscle gain, flexibility,
+              or overall well-being.</span>
+        </div>
+
+
+        <div class="flex-service">
+          <div class="fitness-guides-container">
+            <div class="fitness-g-heading">
+              <h2>Fitness Guides</h2>
+            </div>
+            <div class="fitness-g-content">
+              <p>
+                FitLife offers a wide range of comprehensive fitness guides that
+                cater to different needs, whether it's weight loss, muscle gain,
+                flexibility, or overall well-being. These guides are written by
+                certified fitness professionals and cover topics such as
+                nutrition, workouts, and recovery strategies
+              </p>
+            </div>
+          </div>
+
+          <div class="fitness-guides-container">
+            <div class="fitness-g-heading">
+              <h2>Workout Plans</h2>
+            </div>
+            <div class="fitness-g-content">
+              <p>
+                Users can access personalized workout plans that align with
+                their fitness goals, available equipment, and time constraints.
+                These plans adapt and evolve as users progress, ensuring they
+                stay motivated and challenged.
+              </p>
+            </div>
+          </div>
+
+          <div class="fitness-guides-container">
+            <div class="fitness-g-heading">
+              <h2>Nutrition and Diet Resources</h2>
+            </div>
+            <div class="fitness-g-content">
+              <p>
+                We provides expert-backed nutritional guidance, meal plans, and
+                recipes that support users in making healthier food choices. We
+                also offer calorie calculators and tracking tools to help users
+                monitor their progress.
+              </p>
+            </div>
+          </div>
+
+          <div class="fitness-guides-container">
+            <div class="fitness-g-heading">
+              <h2>Community Support</h2>
+            </div>
+            <div class="fitness-g-content">
+              <p>
+                Our website fosters a vibrant and inclusive fitness community
+                where users can connect, share their experiences, and offer
+                support and encouragement to one another. We also host live Q&A
+                sessions with fitness experts to address user questions and
+                concerns.
+              </p>
+            </div>
+          </div>
+
+          <div class="fitness-guides-container">
+            <div class="fitness-g-heading">
+              <h2>Fitness Blog</h2>
+            </div>
+            <div class="fitness-g-content">
+              <p>
+                Stay up-to-date with the latest trends, research, and tips in
+                the fitness world through our regularly updated blog. Our
+                articles cover a wide array of topics, from workout routines and
+                fitness equipment reviews to mental health and motivation.
+              </p>
+            </div>
+          </div>
+
+          <div class="fitness-guides-container">
+            <div class="fitness-g-heading">
+              <h2>Progress Tracking</h2>
+            </div>
+            <div class="fitness-g-content">
+              <p>
+                Users can track their fitness progress, including weight, body
+                measurements, and workout performance, through interactive tools
+                and visual charts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =============   SERVICE - SECTION   =============== -->
+      
+      
+      <!-- =============   SECTION TABS -   =============== -->
+
+      <section class="section-programs">
+
+        <div class="card-programs">
+          <div class="clip-art"></div>
+          <div class="content">
+            <h2 class="title">Training</h2>
+            <span class="span-title">Personalized Workout Plans</span>
+
+            <ul class="content-list">
+              <li>body compostion</li>
+              <li>strenght training</li>
+              <li>circuit training</li>
+              <li>stretching</li>
+              <li>flexibility</li>
+              <li>weight lifting</li>
+              <li>cardiovasculor exercises</li>
+              <li>enduarance</li>
+             
+             </ul>
+          </div>
+
+        </div>
+
+        <div class="card-nutrition card-programs">
+          <div class="clip-art"></div>
+          <div class="content">
+            <h2 class="title">Nutrition</h2>
+            <span class="span-title">Personalized Nutrition Plan</span>
+
+            <ul class="content-list">
+              <li>calorie surplus</li>
+                    <li>calorie defecet</li>
+                    <li>maintaince calorie</li>
+                    <li>list of nutrition found on foods (full chart)</li>
+             
+             </ul>
+          </div>
+
+        </div>
+
+        <div class="card-heath-tools  card-programs">
+          <div class="clip-art"></div>
+          <div class="content">
+            <h2 class="title">Health Tools</h2>
+            <span class="span-title">health related calculators</span>
+
+            <ul class="content-list">
+              <li>daily calorie requirement calculators</li>
+                    <li>bmi calculator</li>
+                    <li>ideal weight calculor</li>
+                    <li>body fat calculate</li>
+                    <li>body type calculator(female)</li>
+                    <li>daily protein intake calculate</li>
+                    <li>daily macro Nutrient calculate</li>
+                    <li>daily micro Nutrient calculate</li>
+             
+             </ul>
+          </div>
+
+        </div>
+
+        <div class="card-onlinesupport card-programs">
+          <div class="clip-art"></div>
+          <div class="content">
+            <h2 class="title">Online Support</h2>
+            <span class="span-title">24x7 Support by our best trainers</span>
+
+            <ul class="content-list">
+              <li>Online training</li>
+              <li>personal profile(including weight height age sex etc)</li>
+              <li>workout videos according to goal</li>
+              <li>Scheduled Meetings with coach</li>
+              <li>Progress Tracking</li>
+              <li>fitness blog</li>
+             </ul>
+          </div>
+
+        </div>
+
+      </section>
+        <!-- <section class="section">
+          <img src="https://placehold.it/150x150" class="image" />
+          <div class="content">
         
-      <div class="card-health-container">
-        <div class="card-heading">
-          <h3>Underweight</h3>
-        </div>
-        <div class="logo">
-          <img src="./bgimages/Red Heart.png" alt="text" />
-        </div>
-        <div class="card-value">
-          <p>60%</p>
-        </div>
-      </div>
-
-      <div class="card-health-container">
-        <div class="card-heading">
-          <h3>Overweight</h3>
-        </div>
-        <div class="logo">
-          <img src="./bgimages/Pregnant Man.png" alt="text" />
-        </div>
-        <div class="card-value">
-          <p>20%</p>
-        </div>
-      </div>
-
-    </div>
-    </section>
-
-    <section class="section-services">
-      <div><h1 class="abt-heading">Our Services</h1></div>
-
-      <div class="abt-slogna">
-        <p>
-          We offers a wide range of comprehensive fitness guides that cater to
-          different needs, whether it's weight loss, muscle gain, flexibility,
-          or overall well-being.
-        </p>
-      </div>
-
-      <div class="flex-service">
-        <div class="fitness-guides-container">
-          <div class="fitness-g-heading">
-            <h2>Fitness Guides</h2>
-          </div>
-          <div class="fitness-g-content">
-            <p>
-              FitLife offers a wide range of comprehensive fitness guides that
-              cater to different needs, whether it's weight loss, muscle gain,
-              flexibility, or overall well-being. These guides are written by
-              certified fitness professionals and cover topics such as
-              nutrition, workouts, and recovery strategies
-            </p>
-          </div>
-        </div>
-
-        <div class="fitness-guides-container">
-          <div class="fitness-g-heading">
-            <h2>Workout Plans</h2>
-          </div>
-          <div class="fitness-g-content">
-            <p>
-              Users can access personalized workout plans that align with their
-              fitness goals, available equipment, and time constraints. These
-              plans adapt and evolve as users progress, ensuring they stay
-              motivated and challenged.
-            </p>
-          </div>
-        </div>
-
-        <div class="fitness-guides-container">
-          <div class="fitness-g-heading">
-            <h2>Nutrition and Diet Resources</h2>
-          </div>
-          <div class="fitness-g-content">
-            <p>
-              We provides expert-backed nutritional guidance, meal plans, and
-              recipes that support users in making healthier food choices. We
-              also offer calorie calculators and tracking tools to help users
-              monitor their progress.
-            </p>
-          </div>
-        </div>
-
-        <div class="fitness-guides-container">
-          <div class="fitness-g-heading">
-            <h2>Community Support</h2>
-          </div>
-          <div class="fitness-g-content">
-            <p>
-              Our website fosters a vibrant and inclusive fitness community
-              where users can connect, share their experiences, and offer
-              support and encouragement to one another. We also host live Q&A
-              sessions with fitness experts to address user questions and
-              concerns.
-            </p>
-          </div>
-        </div>
-
-        <div class="fitness-guides-container">
-          <div class="fitness-g-heading">
-            <h2>Fitness Blog</h2>
-          </div>
-          <div class="fitness-g-content">
-            <p>
-              Stay up-to-date with the latest trends, research, and tips in the
-              fitness world through our regularly updated blog. Our articles
-              cover a wide array of topics, from workout routines and fitness
-              equipment reviews to mental health and motivation.
-            </p>
-          </div>
-        </div>
-
-        <div class="fitness-guides-container">
-          <div class="fitness-g-heading">
-            <h2>Progress Tracking</h2>
-          </div>
-          <div class="fitness-g-content">
-            <p>
-              Users can track their fitness progress, including weight, body
-              measurements, and workout performance, through interactive tools
-              and visual charts.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-choose-goal">
-      <div class="goals-container">
-        <div class="weight-management">
-          <p>Manage Weight according</p>
-          <ul>
-            <li>Weight gain</li>
-            <li>Weight loss</li>
-            <li>fat loss</li>
-            <li>muscle gaining</li>
-            <li>body recompositon</li>
-          </ul>
-        </div>
-
-        <div class="nutrution">
-          <p>calories intake</p>
-          <ul>
-            <li>What are calories</li>
-            <li>daily calorie requirement</li>
-            <li>calculate calories</li>
-          </ul>
-        </div>
-
-        <div class="guide">
-          <p>personal guidance</p>
-          <ul>
-            <li>Online training</li>
-            <li>Scheduled Meetings</li>
-            <li>Progress Tracking</li>
-          </ul>
-        </div>
-
-        <div class="daily-entries">
-          <p>personalized features</p>
-          <ul>
-            <li>Workout tutorials</li>
-            <li>stretching</li>
-            <li>mobility</li>
-            <li>enduarance</li>
-            <li>daily workout logs</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer" id="last-navi">
-      <div class="footer-container">
+            <h2 class="title">
+              Nutrition
+            </h2>
+            <p class="paragraph">
         
-        <div class="creator-contact">
-          <ul class="contact-links">
-            <li>
-              <a href="https://www.facebook.com/" target="_blank"
-                ><img class="footer-logo" src="./bgimages/fb-icon.png" alt="fb"
-                /></a>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At non ex earum, libero dignissimos voluptates. Quis beatae dolorem autem ipsa!
+            </p>
+          </div>
+        </section>
+
+        </section>
+        <section class="section">
+          <img src="https://placehold.it/150x150" class="image" />
+          <div class="content">
+        
+            <h2 class="title">
+              Heath Tools
+            </h2>
+            <p class="paragraph">
+        
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At non ex earum, libero dignissimos voluptates. Quis beatae dolorem autem ipsa!
+            </p>
+          </div>
+        </section>
+
+        </section>
+        <section class="section">
+          <img src="https://placehold.it/150x150" class="image" />
+          <div class="content">
+        
+            <h2 class="title">
+              Online Support
+            </h2>
+            <p class="paragraph">
+        
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At non ex earum, libero dignissimos voluptates. Quis beatae dolorem autem ipsa!
+            </p>
+          </div>
+        </section> -->
+
+   
+
+
+        <!-- <div class="goals-container">
+          <div class="goals-container-heading abt-heading">
+            <h1>Plans</h1>
+          </div>
+          <div class="weight-management">
+            <p>Manage Weight according</p>
+            <ul>
+              <li>Weight gain</li>
+              <li>Weight loss</li>
+              <li>fat loss</li>
+              <li>muscle gaining</li>
+              <li>body recompositon</li>
+            </ul>
+          </div>
+
+          <div class="nutrution">
+            <p>calories intake</p>
+            <ul>
+              <li>What are calories</li>
+              <li>daily calorie requirement</li>
+              <li>calculate calories</li>
+            </ul>
+          </div>
+
+          <div class="guide">
+            <p>personal guidance</p>
+            <ul>
+              <li>Online training</li>
+              <li>Scheduled Meetings</li>
+              <li>Progress Tracking</li>
+            </ul>
+          </div>
+
+          <div class="daily-entries">
+            <p>personalized features</p>
+            <ul>
+              <li>Workout tutorials</li>
+              <li>stretching</li>
+              <li>mobility</li>
+              <li>enduarance</li>
+              <li>daily workout logs</li>
+            </ul>
+          </div>
+        </div> -->
+
+
+            <!-- =============   SECTION TABS -   =============== -->
+
+
+
+     <!-- =============   SECTION - PARALLEX   =============== -->
+ 
+      <section class="quick-tips">
+        <!-- quick tips on auto slide -->
+        <!-- like did you know apple has no caloreies -->
+        <!-- 1 hours workout burn 200 calories -->
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="tips-heading">
+            <h1>Did you know?</h1>
+            <span id="element2"> </span>
+          </div>
+        </div>
+      </section>
+
+          <!-- =============   SECTION - PARALLEX   =============== -->
+
+
+          <!-- =============   SECTION - CONTACT   =============== -->
+          
+      <section class="section-cn">
+        <div class="container abt-heading">
+          <h1>contact us</h1>
+          <span>your suggestion will be a great help</span>
+        </div>
+
+        <div class="section-contact-main">
+          <form action="#">
+            <div class="grid grid-two-col">
+              <input
+                type="text"
+                name="username"
+                id=""
+                required
+                placeholder="Name"
+              />
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Email"
+                autocomplete="false"
+              />
+            </div>
+            <div>
+              <input type="text" name="subject" placeholder="Subject" />
+            </div>
+            <div>
+              <textarea
+                name="message"
+                id="txtarea"
+                placeholder="Message"
+              ></textarea>
+            </div>
+
+            <div>
+              <input type="submit" value="send message" class="btnsubmit" />
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- =============   SECTION - CONTACT   =============== -->
+
+
+      <!-- =============   SECTION - FOOTER  =============== -->
+
+      <footer class="footer" id="last-navi">
+        <div class="footer-container">
+          <div class="ft-hd">
+            <p>CONNECT WITH US</p>
+          </div>
+          <div class="creator-contact">
+            <ul class="contact-links">
+              <li>
+                <a href="https://www.facebook.com/" target="_blank" ><ion-icon name="logo-facebook"  class="footer-logo"></ion-icon></a>
               </li>
               <li>
-                <a href="https://www.instagram.com/" target="_blank"
-                ><img
-                  src="./bgimages/instagram.png"
-                  class="footer-logo"
-                  alt="instagram"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://www.twitter.com/" target="_blank"
-                ><img
-                  src="./bgimages/twitter.png"
-                  class="footer-logo"
-                  alt="twitter"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://github.com/rajravikant" target="_blank"
-                  ><img
-                  src="./bgimages/github..png"
-                  class="footer-logo"
-                  alt="github"
-                  srcset=""
-                  /></a>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="for-more">
-              <p>For more Contact: rajravikant042@gmail.com</p>
-            </div>
-            
-            <div class="for-more">
-              <p>INDIA | +91 | XXXXXXXXX</p>
-            </div>
-            <div class="creater-copyright">
-              <h2>©Designed and Managed by Ravi</h2>
-            </div>
+                <a href="https://www.instagram.com/" target="_blank"  ><ion-icon name="logo-instagram" class="footer-logo"></ion-icon></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/" target="_blank"><ion-icon name="logo-twitter"  class="footer-logo"></ion-icon></a>
+              </li>
+              <li><a href="https://github.com/rajravikant" target="_blank" ><ion-icon name="logo-github" class="footer-logo"></ion-icon></a>
+              </li>
+            </ul>
           </div>
-        </footer>
-        
-        <script src="./scripts/index.js"></script>
+        </div>
+
+        <dir class="footer-services">
+          <div class="footer-li-title">
+            <p>Learn More</p>
+          </div>
+          <ul class="fs-li">
+            <li>Tutorials</li>
+            <li>Coaching</li>
+            <li>Advice</li>
+            <li>Blog</li>
+          </ul>
+        </dir>
+
+        <dir class="footer-services" id="fclink">
+          <div class="footer-li-title">
+            <p>Quick Links</p>
+          </div>
+          <ul class="fs-li">
+            <li>Tutorials</li>
+            <li>Coaching</li>
+            <li>Advice</li>
+            <li>Blog</li>
+          </ul>
+        </dir>
+
+        <dir class="footer-services" id="fclink2">
+          <div class="footer-li-title">
+            <p>Services</p>
+          </div>
+          <ul class="fs-li">
+            <li>Tutorials</li>
+            <li>Coaching</li>
+            <li>Advice</li>
+            <li>Blog</li>
+          </ul>
+        </dir>
+      </footer>
+
+      <div class="creater-copyright">
+        <p>©2023 rajravikant/github.com all rights reserved</p>
+      </div>
+      <!-- =============   SECTION - FOOTER  =============== -->
+      
+      
+      
+      <!-- =============   SCRIPT LINKING SECTION  =============== -->
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      
+      <script src="scripts/index.js"></script>
+      <!-- =============   SCRIPT LINKING SECTION  =============== -->
+
+    </main>
   </body>
-  </html>
-  
+</html>
