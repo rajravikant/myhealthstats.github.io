@@ -7,10 +7,9 @@
     <title>My Health Stats</title>
   </head>
   <body>
-    
     <!-- =============   NAVBAR - SECTION   =============== -->
 
-    <header class="header ">
+    <header class="header">
       <!-- <img src="./bgimages/Pregnant Man.png" alt="website logo" class="logo"> -->
       <div class="logo">MyHealthStats</div>
       <nav class="navbar">
@@ -18,17 +17,19 @@
           <li><a href="#homepage">Home</a></li>
           <li><a href="#service-s">Services</a></li>
           <li><a href="#">Blog</a></li>
-          <li><a href="">health tools ></a>
-                        <ul>
-                          <li><a href="#">Protein </a></li>
-                          <li><a href="#">BMI</a></li>
-                          <li><a href="#">Body fat</a></li>
-                          <li><a href="#">Calorie calculator</a></li>
-                        </ul>
+          <li>
+            <a href="">health tools ></a>
+            <ul>
+              <li><a href="#">Protein </a></li>
+              <li><a href="#">BMI</a></li>
+              <li><a href="#">Body fat</a></li>
+              <li><a href="#">Calorie calculator</a></li>
+            </ul>
           </li>
           <li><a href="#">About</a></li>
           <li><a href="#last-navi">Contact</a></li>
-          <li><a href="pages/myaccount.html">Account</a></li>
+          <!-- <li><a href="pages/myaccount.html">Account</a></li> -->
+          <li><button class="btn-cta">Sign Up</button></li>
         </ul>
       </nav>
 
@@ -41,58 +42,167 @@
     <!-- =============   NAVBAR - SECTION   =============== -->
 
     <main>
-      <!-- =============   INFO - SECTION   =============== -->
+      <!-- =============   HERO - SECTION   =============== -->
 
-      <section class="section-info" id="homepage">
-        <div id="head-title">
-          <h1>WELCOME TO MY HEALTH STATS</h1>
-          <h1>,here you will track your</h1>
-          <h1 id="fit">FITNESS</h1>
-        </div>
-
-        <div id="section-info-slogan">
-          <p>
-            MyHealthStats" is an engaging and informative fitness website
+      <section class="section-hero" id="homepage">
+        <div class="container">
+          <p class="tagline">get your body on shape</p>
+          <h1 class="hero-heading">
+            Unlock Your Potential: Your Ultimate Fitness Destination for
+            Achieving Your Healthiest Self
+          </h1>
+          <p class="hero-content">
+            MyHealthStats is an engaging and informative fitness website
             designed to empower individuals on their journey to a healthier and
             more active lifestyle. Our website is dedicated to providing
             valuable resources, expert advice,and a supportive community to help
             users achieve their fitness goals, regardless of their fitness level
             or background.
           </p>
-        </div>
-
-        <div class="button-section">
-          <button class="btn-learn">Sign Up</button>
-          <button class="btn-Start btn-learn">Start Now</button>
+          <div class="hero-buttons">
+            <button class="btn-signup">Sign Up</button>
+            <button class="btn-learn">Learn More</button>
+          </div>
         </div>
       </section>
 
-      <!-- =============   INFO - SECTION   =============== -->
+      <!-- =============   HERO - SECTION   =============== -->
 
+      <!-- =============   SECTION TABS -   =============== -->
+
+      <section class="section-programs">
+        <div class="program-heading abt-heading">
+          <h1>Programs</h1>
+          <span>
+            We offers a wide range of comprehensive fitness guides that cater to
+            different needs, whether it's weight loss, muscle gain, flexibility,
+            or overall well-being.</span
+          >
+        </div>
+        <div class="card-programs">
+          <div class="clip-art"></div>
+          <div class="content">
+            <h2 class="title">Training</h2>
+            <span class="span-title">Personalized Workout Plans</span>
+
+            <ul class="content-list">
+              <li>body compostion</li>
+              <li>strenght training</li>
+              <li>circuit training</li>
+              <li>stretching</li>
+              <li>flexibility</li>
+              <li>weight lifting</li>
+              <li>cardiovasculor exercises</li>
+              <li>enduarance</li>
+            </ul>
+            <button class="btn-cta">get started</button>
+          </div>
+        </div>
+
+        <div class="card-nutrition card-programs">
+          <div class="clip-art"></div>
+          <div class="content">
+            <h2 class="title">Nutrition</h2>
+            <span class="span-title">Personalized Nutrition Plan</span>
+
+            <ul class="content-list">
+              <li>calorie surplus</li>
+              <li>calorie defecet</li>
+              <li>maintaince calorie</li>
+              <li>list of nutrition found on foods (full chart)</li>
+            </ul>
+            <button class="btn-cta">get started</button>
+          </div>
+        </div>
+
+        <div class="card-heath-tools card-programs">
+          <div class="clip-art"></div>
+          <div class="content">
+            <h2 class="title">Health Tools</h2>
+            <span class="span-title">health related calculators</span>
+
+            <ul class="content-list">
+              <li>daily calorie requirement calculators</li>
+              <li>bmi calculator</li>
+              <li>ideal weight calculor</li>
+              <li>body fat calculate</li>
+              <li>body type calculator(female)</li>
+              <li>daily protein intake calculate</li>
+              <li>daily macro Nutrient calculate</li>
+              <li>daily micro Nutrient calculate</li>
+            </ul>
+            <button class="btn-cta">get started</button>
+          </div>
+        </div>
+
+        <div class="card-onlinesupport card-programs">
+          <div class="clip-art"></div>
+          <div class="content">
+            <h2 class="title">Online Support</h2>
+            <span class="span-title">24x7 Support by our best trainers</span>
+
+            <ul class="content-list">
+              <li>Online training</li>
+              <li>personal profile(including weight height age sex etc)</li>
+              <li>workout videos according to goal</li>
+              <li>Scheduled Meetings with coach</li>
+              <li>Progress Tracking</li>
+              <li>fitness blog</li>
+            </ul>
+            <button class="btn-cta">get started</button>
+          </div>
+        </div>
+
+        <div class="collapse-wrapper">
+          <div class="card-collapsable">
+            <h2 class="title">
+              Online Support
+              <span class="arrow"
+                ><ion-icon name="chevron-down-circle-outline"></ion-icon
+              ></span>
+            </h2>
+            <!-- <div class="clip-art"></div> -->
+            <div class="content-collapsible">
+              <div class="clip-art"></div>
+              <span class="span-title">24x7 Support by our best trainers</span>
+
+              <ul class="content-list">
+                <li>Online training</li>
+                <li>personal profile</li>
+                <li>workout videos</li>
+                <li>Scheduled Meetings</li>
+                <li>Progress Tracking</li>
+                <li>fitness blog</li>
+              </ul>
+              <button class="btn-cta">get started</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============   SECTION TABS -   =============== -->
 
       <!-- =============   TYPED JS  - SECTION   =============== -->
 
-      <section class="section-art">
+      <!-- <section class="section-art">
         <div class="container-hs">
           <div class="ch-title">BE <br /><span id="element"></span></div>
         </div>
-      </section>
+      </section> -->
 
       <!-- =============   TYPED JS  - SECTION   =============== -->
-
-
 
       <!-- =============   SERVICE - SECTION   =============== -->
 
       <section class="section-services" id="service-s">
-
-        <div class="abt-heading" >
-          <h1 >Our Services</h1>
-            <span>   We offers a wide range of comprehensive fitness guides that cater to
-              different needs, whether it's weight loss, muscle gain, flexibility,
-              or overall well-being.</span>
+        <div class="abt-heading">
+          <h1>what you will get?</h1>
+          <span>
+            We offers a wide range of comprehensive fitness guides that cater to
+            different needs, whether it's weight loss, muscle gain, flexibility,
+            or overall well-being.</span
+          >
         </div>
-
 
         <div class="flex-service">
           <div class="fitness-guides-container">
@@ -140,21 +250,6 @@
 
           <div class="fitness-guides-container">
             <div class="fitness-g-heading">
-              <h2>Community Support</h2>
-            </div>
-            <div class="fitness-g-content">
-              <p>
-                Our website fosters a vibrant and inclusive fitness community
-                where users can connect, share their experiences, and offer
-                support and encouragement to one another. We also host live Q&A
-                sessions with fitness experts to address user questions and
-                concerns.
-              </p>
-            </div>
-          </div>
-
-          <div class="fitness-guides-container">
-            <div class="fitness-g-heading">
               <h2>Fitness Blog</h2>
             </div>
             <div class="fitness-g-content">
@@ -180,191 +275,126 @@
             </div>
           </div>
         </div>
+        <button class="btn-check">check all features</button>
       </section>
       <!-- =============   SERVICE - SECTION   =============== -->
-      
-      
-      <!-- =============   SECTION TABS -   =============== -->
 
-      <section class="section-programs">
+      <!-- =============   SECTION - RECENT POSTS   =============== -->
 
-        <div class="card-programs">
-          <div class="clip-art"></div>
-          <div class="content">
-            <h2 class="title">Training</h2>
-            <span class="span-title">Personalized Workout Plans</span>
-
-            <ul class="content-list">
-              <li>body compostion</li>
-              <li>strenght training</li>
-              <li>circuit training</li>
-              <li>stretching</li>
-              <li>flexibility</li>
-              <li>weight lifting</li>
-              <li>cardiovasculor exercises</li>
-              <li>enduarance</li>
-             
-             </ul>
-          </div>
-
+      <section class="section-recent-posts">
+        <div class="srp-heading">
+          <h3>Latest Posts</h3>
+          <p>keep up to date with our fitness blog</p>
         </div>
 
-        <div class="card-nutrition card-programs">
-          <div class="clip-art"></div>
-          <div class="content">
-            <h2 class="title">Nutrition</h2>
-            <span class="span-title">Personalized Nutrition Plan</span>
+        <div class="main-container">
+          <div class="srp-container">
+            <div class="srp-content">
+              <div class="cnt-image">
+                <img
+                  src="bgimages/woman-with-visible-abs-doing-fitness-2.jpg"
+                  alt="**"
+                  class="rcicon"
+                />
+              </div>
+              <div class="content-title">
+                <h3>core exercises for stability</h3>
+              </div>
 
-            <ul class="content-list">
-              <li>calorie surplus</li>
-                    <li>calorie defecet</li>
-                    <li>maintaince calorie</li>
-                    <li>list of nutrition found on foods (full chart)</li>
-             
-             </ul>
+              <div class="content-blog">
+                <p>
+                  Core exercises for stability are essential for improving
+                  posture and preventing injuries. Key exercises include planks,
+                  bridges, Russian twists, bird dogs, and dead bugs. These
+                  exercises strengthen core muscles, enhancing stability and
+                  supporting overall spine health and posture.
+                </p>
+              </div>
+
+              <div class="readmore">
+                <button class="btn-rm">Read more</button>
+              </div>
+              <hr color="black" />
+              <div class="blog-date">
+                <p>September 20, 2023</p>
+              </div>
+            </div>
           </div>
 
-        </div>
+          <div class="srp-container">
+            <div class="srp-content">
+              <div class="cnt-image">
+                <img
+                  src="bgimages/vzgliad-poza-fitnes-shtanga-trenirovka-trenazhernyi-zal-fi-2.jpg"
+                  alt="**"
+                  class="rcicon"
+                />
+              </div>
+              <div class="content-title">
+                <h3>Spot fat reduction possible?</h3>
+              </div>
 
-        <div class="card-heath-tools  card-programs">
-          <div class="clip-art"></div>
-          <div class="content">
-            <h2 class="title">Health Tools</h2>
-            <span class="span-title">health related calculators</span>
+              <div class="content-blog">
+                <p>
+                  Spot fat reduction is not possible through targeted exercises
+                  or treatments. Fat loss occurs gradually across the entire
+                  body with a combination of proper nutrition, regular exercise,
+                  and a healthy lifestyle. There's no way to selectively reduce
+                  fat in specific areas.
+                </p>
+              </div>
 
-            <ul class="content-list">
-              <li>daily calorie requirement calculators</li>
-                    <li>bmi calculator</li>
-                    <li>ideal weight calculor</li>
-                    <li>body fat calculate</li>
-                    <li>body type calculator(female)</li>
-                    <li>daily protein intake calculate</li>
-                    <li>daily macro Nutrient calculate</li>
-                    <li>daily micro Nutrient calculate</li>
-             
-             </ul>
+              <div class="readmore">
+                <button class="btn-rm">Read more</button>
+              </div>
+              <hr color="black" />
+              <div class="blog-date">
+                <p>September 20, 2023</p>
+              </div>
+            </div>
           </div>
 
-        </div>
+          <div class="srp-container">
+            <div class="srp-content">
+              <div class="cnt-image">
+                <img
+                  src="bgimages/workout-transformed.jpeg"
+                  alt="**"
+                  class="rcicon"
+                />
+              </div>
+              <div class="content-title">
+                <h3>Dynamic stretching vs static stretching</h3>
+              </div>
 
-        <div class="card-onlinesupport card-programs">
-          <div class="clip-art"></div>
-          <div class="content">
-            <h2 class="title">Online Support</h2>
-            <span class="span-title">24x7 Support by our best trainers</span>
+              <div class="content-blog">
+                <p>
+                  Dynamic stretching involves active movements that mimic the
+                  activity you're about to perform, warming up muscles and
+                  increasing range of motion. Static stretching involves holding
+                  a stretch for a prolonged period to improve flexibility.
+                  Dynamic stretching is ideal before exercise, while static
+                  stretching is better for post-workout cool-down and
+                  flexibility improvement.
+                </p>
+              </div>
 
-            <ul class="content-list">
-              <li>Online training</li>
-              <li>personal profile(including weight height age sex etc)</li>
-              <li>workout videos according to goal</li>
-              <li>Scheduled Meetings with coach</li>
-              <li>Progress Tracking</li>
-              <li>fitness blog</li>
-             </ul>
+              <div class="readmore">
+                <button class="btn-rm">Read more</button>
+              </div>
+              <hr color="black" />
+              <div class="blog-date">
+                <p>September 20, 2023</p>
+              </div>
+            </div>
           </div>
-
         </div>
-
       </section>
-        <!-- <section class="section">
-          <img src="https://placehold.it/150x150" class="image" />
-          <div class="content">
-        
-            <h2 class="title">
-              Nutrition
-            </h2>
-            <p class="paragraph">
-        
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At non ex earum, libero dignissimos voluptates. Quis beatae dolorem autem ipsa!
-            </p>
-          </div>
-        </section>
 
-        </section>
-        <section class="section">
-          <img src="https://placehold.it/150x150" class="image" />
-          <div class="content">
-        
-            <h2 class="title">
-              Heath Tools
-            </h2>
-            <p class="paragraph">
-        
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At non ex earum, libero dignissimos voluptates. Quis beatae dolorem autem ipsa!
-            </p>
-          </div>
-        </section>
+      <!-- =============   SECTION - RECENT POSTS   =============== -->
 
-        </section>
-        <section class="section">
-          <img src="https://placehold.it/150x150" class="image" />
-          <div class="content">
-        
-            <h2 class="title">
-              Online Support
-            </h2>
-            <p class="paragraph">
-        
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At non ex earum, libero dignissimos voluptates. Quis beatae dolorem autem ipsa!
-            </p>
-          </div>
-        </section> -->
+      <!-- =============   SECTION - PARALLEX   =============== -->
 
-   
-
-
-        <!-- <div class="goals-container">
-          <div class="goals-container-heading abt-heading">
-            <h1>Plans</h1>
-          </div>
-          <div class="weight-management">
-            <p>Manage Weight according</p>
-            <ul>
-              <li>Weight gain</li>
-              <li>Weight loss</li>
-              <li>fat loss</li>
-              <li>muscle gaining</li>
-              <li>body recompositon</li>
-            </ul>
-          </div>
-
-          <div class="nutrution">
-            <p>calories intake</p>
-            <ul>
-              <li>What are calories</li>
-              <li>daily calorie requirement</li>
-              <li>calculate calories</li>
-            </ul>
-          </div>
-
-          <div class="guide">
-            <p>personal guidance</p>
-            <ul>
-              <li>Online training</li>
-              <li>Scheduled Meetings</li>
-              <li>Progress Tracking</li>
-            </ul>
-          </div>
-
-          <div class="daily-entries">
-            <p>personalized features</p>
-            <ul>
-              <li>Workout tutorials</li>
-              <li>stretching</li>
-              <li>mobility</li>
-              <li>enduarance</li>
-              <li>daily workout logs</li>
-            </ul>
-          </div>
-        </div> -->
-
-
-            <!-- =============   SECTION TABS -   =============== -->
-
-
-
-     <!-- =============   SECTION - PARALLEX   =============== -->
- 
       <section class="quick-tips">
         <!-- quick tips on auto slide -->
         <!-- like did you know apple has no caloreies -->
@@ -378,13 +408,12 @@
         </div>
       </section>
 
-          <!-- =============   SECTION - PARALLEX   =============== -->
+      <!-- =============   SECTION - PARALLEX   =============== -->
 
+      <!-- =============   SECTION - CONTACT   =============== -->
 
-          <!-- =============   SECTION - CONTACT   =============== -->
-          
       <section class="section-cn">
-        <div class="container abt-heading">
+        <div class="contact-container abt-heading">
           <h1>contact us</h1>
           <span>your suggestion will be a great help</span>
         </div>
@@ -427,7 +456,6 @@
 
       <!-- =============   SECTION - CONTACT   =============== -->
 
-
       <!-- =============   SECTION - FOOTER  =============== -->
 
       <footer class="footer" id="last-navi">
@@ -438,15 +466,27 @@
           <div class="creator-contact">
             <ul class="contact-links">
               <li>
-                <a href="https://www.facebook.com/" target="_blank" ><ion-icon name="logo-facebook"  class="footer-logo"></ion-icon></a>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><ion-icon name="logo-facebook" class="footer-logo"></ion-icon
+                ></a>
               </li>
               <li>
-                <a href="https://www.instagram.com/" target="_blank"  ><ion-icon name="logo-instagram" class="footer-logo"></ion-icon></a>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><ion-icon
+                    name="logo-instagram"
+                    class="footer-logo"
+                  ></ion-icon
+                ></a>
               </li>
               <li>
-                <a href="https://www.twitter.com/" target="_blank"><ion-icon name="logo-twitter"  class="footer-logo"></ion-icon></a>
+                <a href="https://www.twitter.com/" target="_blank"
+                  ><ion-icon name="logo-twitter" class="footer-logo"></ion-icon
+                ></a>
               </li>
-              <li><a href="https://github.com/rajravikant" target="_blank" ><ion-icon name="logo-github" class="footer-logo"></ion-icon></a>
+              <li>
+                <a href="https://github.com/rajravikant" target="_blank"
+                  ><ion-icon name="logo-github" class="footer-logo"></ion-icon
+                ></a>
               </li>
             </ul>
           </div>
@@ -493,17 +533,20 @@
         <p>©2023 rajravikant/github.com all rights reserved</p>
       </div>
       <!-- =============   SECTION - FOOTER  =============== -->
-      
-      
-      
+
       <!-- =============   SCRIPT LINKING SECTION  =============== -->
       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-      
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+
       <script src="scripts/index.js"></script>
       <!-- =============   SCRIPT LINKING SECTION  =============== -->
-
     </main>
   </body>
 </html>

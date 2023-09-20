@@ -2,6 +2,8 @@ const nav_header = document.querySelector("header");
 const mobile_nav = document.querySelector(".mobile-nav-bar");
 const nav_bar_links = document.querySelectorAll("navbar-links");
 const btn_lrn = document.querySelector(".btn-learn");
+const btn_arrow = document.querySelector(".arrow");
+const collapseC = document.querySelector(".content-collapsible");
 
 const redirectToMyAccount = () => {
   window.open("../pages/myaccount.html");
@@ -9,14 +11,18 @@ const redirectToMyAccount = () => {
 
 const toggleNavbar = () => {
   nav_header.classList.toggle("active");
-  
 };
 
-mobile_nav.addEventListener("click",()=> toggleNavbar());
-btn_lrn.addEventListener("click", () => redirectToMyAccount());
+const toggledownarrow = () => {
+  collapseC.classList.toggle("hideAccord");
+  console.log("cliciked");
+};
 
+mobile_nav.addEventListener("click", () => toggleNavbar());
+btn_lrn.addEventListener("click", () => redirectToMyAccount());
+btn_arrow.addEventListener("click", () => toggledownarrow());
 //sticky navbar
-const section_info = document.querySelector(".section-info");
+const section_hero = document.querySelector(".section-hero");
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -33,21 +39,21 @@ const observer = new IntersectionObserver(
   }
 );
 
-observer.observe(section_info);
+observer.observe(section_hero);
 //end sticky nav bar
 
-var typed = new Typed("#element", {
-  strings: [
-    "FIT",
-    "HEALTHY",
-    "CONSISTENT",
-    "DEDICATED",
-    "FOCUSED",
-    "PASSIONATE",
-    "FIT"
-  ],
-  typeSpeed: 80,
-});
+// var typed = new Typed("#element", {
+//   strings: [
+//     "FIT",
+//     "HEALTHY",
+//     "CONSISTENT",
+//     "DEDICATED",
+//     "FOCUSED",
+//     "PASSIONATE",
+//     "FIT",
+//   ],
+//   typeSpeed: 80,
+// });
 
 var typed = new Typed("#element2", {
   strings: [
@@ -60,8 +66,5 @@ var typed = new Typed("#element2", {
     "Take recovery days",
     "Track your workout schedule",
   ],
-  typeSpeed: 30,
+  typeSpeed: 80,
 });
-
-
-

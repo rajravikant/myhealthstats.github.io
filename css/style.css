@@ -5,7 +5,6 @@
 * {
   margin: 0;
   padding: 0;
-
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
@@ -43,7 +42,7 @@ header {
   transition: 1s;
 }
 
-.sticky .section-info {
+.sticky .section-hero {
   margin-top: 60px;
 }
 
@@ -89,8 +88,6 @@ header {
   /* padding: 0; */
 }
 
-/* navbar hover - underline */
-
 .navbar-list li a:after {
   content: "";
   position: absolute;
@@ -103,6 +100,7 @@ header {
 .navbar-list li a:hover::after {
   width: 100%;
 }
+
 .navbar-list :hover {
   color: #ffffff;
 }
@@ -121,36 +119,6 @@ header {
 
 .mobile-nav-icon[name="close-outline"] {
   display: none;
-}
-
-.button-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
-.btn-learn {
-  padding: 10px;
-  width: 150px;
-  border: 0;
-  border-radius: 100px;
-  /* font-size: px; */
-  font-weight: bold;
-  background-color: #a0a0a0;
-  transition: 0.3s;
-}
-
-.btn-learn:hover {
-  background-image: linear-gradient(
-    to right,
-    #7bb629,
-    #7bbc20,
-    #74b31d,
-    #8eed07
-  );
-  box-shadow: 0 4px 15px 0 #75c20a;
-  transform: scale(1.1);
 }
 
 /* responsive code section */
@@ -224,7 +192,10 @@ header {
     font-size: 60%;
   }
 
-  .section-info {
+  .section-hero .container .hero-content {
+    width: 350px;
+  }
+  .section-hero {
     gap: 30px;
   }
 
@@ -238,52 +209,128 @@ header {
     height: 5px;
     width: 5px;
   }
+
+  .section-recent-posts .main-container {
+    flex-direction: column;
+  }
+
+  .section-programs .card-programs {
+    flex-direction: column;
+  }
+
+  .card-programs .content {
+    flex-direction: column;
+    width: 400px;
+    gap: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+  .content h2 {
+    font-size: 20px;
+  }
+
+  .section-recent-posts .srp-container {
+    width: 300px;
+  }
+
+  .quick-tips{
+    height: fit-content;
+    
+  }
 }
 
 /* responsive code section */
 
-#head-title {
-  color: white;
-
-  font-size: 40px;
-}
-
-#section-info-slogan {
-  color: darkgray;
-  font-size: 20px;
-  width: auto;
-}
-
-#fit {
-  color: #ffffff;
-  display: block;
-  transition: 0.3s;
-  width: fit-content;
-  height: min-content;
-}
-
-#fit:hover {
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0);
-  text-shadow: 0em 0em 3em #83ff00, 0em 0em 2em #83ff00, 1px 1px 5px #83ff00,
-    0px 0px 15px #83ff00, 1px 0px 0px white, -1px 0px 2px rgba(0, 0, 0, 0.5);
-}
-
-.section-info {
+.section-hero {
   padding: 30px;
-  height: 80vh;
-  background: url(../bgimages/fitness.jpg) no-repeat rgba(0, 0, 0, 0.7);
+  background: url(../bgimages/alex-mccarthy-a6FHROHuQ9o-unsplash.jpg) no-repeat
+    rgba(0, 0, 0, 0.4);
   background-size: cover;
   background-blend-mode: darken;
   background-attachment: fixed;
-  transform-style: preserve-3d;
   display: flex;
-
   flex-direction: column;
-  justify-content: left;
-  row-gap: 30px;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.section-hero .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container .tagline {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.container .hero-heading {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.container .hero-content {
+  width: 50%;
+  word-wrap: break-word;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.container .hero-buttons {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.btn-learn {
+  padding: 10px;
+  width: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  font-weight: 500;
+  background: transparent;
+  text-transform: uppercase;
+  color: white;
+  outline: none;
+  box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.495);
+  transition: 0.3s;
+}
+
+.btn-learn:hover {
+  background: radial-gradient(
+    circle at -1% 57.5%,
+    rgb(46, 227, 23) 0%,
+    rgb(2, 135, 20) 90%
+  );
+  border: none;
+  transform: scale(1, 1);
+}
+
+.btn-signup {
+  padding: 10px;
+  width: 150px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 500;
+  background: radial-gradient(
+    circle at -1% 57.5%,
+    rgb(46, 227, 23) 0%,
+    rgb(2, 135, 20) 90%
+  );
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.495);
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .section-art {
@@ -362,7 +409,7 @@ header {
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  z-index: 1;
+  align-items: center;
 }
 
 .flex-service {
@@ -412,8 +459,6 @@ header {
 /* CONTACT */
 
 .section-cn {
-  display: flex;
-  flex-direction: column;
   padding: 30px;
 }
 
@@ -549,20 +594,16 @@ footer {
 }
 
 .quick-tips {
-  height: 40vh;
+  height: 300px;
   background-image: url(../bgimages/fit-girl.jpg);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
   position: relative;
-  transition: all 0.7s linear;
-  text-align: center;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  overflow-y: auto;
-  overflow-x: hidden;
-  /* z-index:-1 ;  */
 }
 
 .quick-tips .overlay {
@@ -605,31 +646,31 @@ footer {
 .card-programs {
   display: flex;
   flex-direction: row;
-  padding: 20 px;
   background-color: #eaeaea;
   box-shadow: 0px 0px 1.3px rgba(0, 0, 0, 0.075),
     0px 0px 10px rgba(0, 0, 0, 0.15);
-  height: 30vh;
-  width: 100%;
+  min-height: 300px;
   align-items: center;
   padding: 20px;
+  justify-content: space-around;
 }
 
 .card-programs .clip-art {
   height: 200px;
-  width: 30%;
+  width: 300px;
   background: url(../bgimages/workout-transformed.jpeg) no-repeat;
   background-size: cover;
   border-radius: 5px;
 }
 
 .content {
-  width: 70%;
+  width: 700px;
   display: flex;
   flex-direction: column;
   padding-left: 30px;
   justify-content: space-between;
-  /* gap: 10px; */
+  align-items: left;
+  gap: 10px;
 }
 
 .content h2 {
@@ -642,7 +683,8 @@ footer {
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
+  margin-top: -15px;
   color: rgba(0, 0, 0, 0.523);
 }
 
@@ -652,7 +694,7 @@ footer {
   width: 80%;
   list-style-type: disc;
   text-transform: uppercase;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-left: 16px;
   font-size: 15px;
   color: rgba(0, 0, 0, 0.641);
@@ -679,6 +721,40 @@ footer {
   flex-direction: row-reverse;
 }
 
+.content .btn-cta {
+  width: 150px;
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 500;
+  background: radial-gradient(
+    circle at -1% 57.5%,
+    rgb(46, 227, 23) 0%,
+    rgb(2, 135, 20) 90%
+  );
+  text-transform: uppercase;
+  color: white;
+  /* box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.495); */
+  cursor: pointer;
+}
+
+.section-services .btn-check {
+  width: 250px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 500;
+  background: radial-gradient(
+    circle at -1% 57.5%,
+    rgb(46, 227, 23) 0%,
+    rgb(2, 135, 20) 90%
+  );
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+
 .card-heath-tools .clip-art {
   background: url(../bgimages/tools.jpg) no-repeat;
   background-size: cover;
@@ -687,4 +763,174 @@ footer {
 .card-onlinesupport .clip-art {
   background: url(../bgimages/online-support.jpg) no-repeat;
   background-size: cover;
+}
+
+.collapse-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card-collapsable {
+  width: 600px;
+  overflow: hidden;
+}
+
+.card-collapsable h2 {
+  position: relative;
+  background-color: #fefefa;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.card-collapsable .arrow {
+  position: absolute;
+  right: 20px;
+  margin-top: 4px;
+}
+
+.content-collapsible {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-height: 0px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: rgb(246, 246, 246);
+  transition: 0.5s ease-in;
+  gap: 10px;
+}
+
+.content-collapsible span {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.content-collapsible .content-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: circle;
+  text-transform: uppercase;
+  padding-top: 20px;
+  justify-content: center;
+  text-align: left;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.content-collapsible .clip-art {
+  height: 200px;
+  width: 300px;
+
+  background: url(../bgimages/online-support.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.hideAccord {
+  position: relative;
+  max-height: 600px;
+  opacity: 1;
+  padding: 20px;
+}
+
+.program-heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.program-heading span {
+  width: 50%;
+}
+
+.program-heading h1::before {
+  display: none;
+}
+
+.section-recent-posts .main-container {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.section-recent-posts {
+  padding: 30px;
+  background: url(../bgimages/exercise-running-women-jogging.jpg)
+    rgba(0, 0, 0, 0.4) no-repeat;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-recent-posts .srp-heading {
+  padding: 10px;
+  color: #ffffff;
+}
+
+.section-recent-posts .srp-heading h3 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-weight: 900;
+  font-size: 50px;
+  text-align: center;
+}
+
+.section-recent-posts .srp-heading p {
+  text-align: center;
+  position: relative;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255, 0.642);
+  padding-top: 5px;
+}
+
+.cnt-image img {
+  height: 80%;
+  max-width: 100%;
+}
+
+.section-recent-posts .srp-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  /* background-color:#47bdfdb0; */
+  background: rgba(255, 255, 255, 0.237);
+  backdrop-filter: blur(10px);
+  justify-content: space-between;
+}
+
+.srp-container {
+  .content-title {
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .content-blog {
+    padding: 15px;
+  }
+  .readmore {
+    padding: 15px;
+  }
+  .blog-date {
+    padding: 15px;
+    font-size: 12px;
+  }
 }
