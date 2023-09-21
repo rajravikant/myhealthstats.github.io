@@ -1,7 +1,9 @@
 const nav_header = document.querySelector("header");
 const mobile_nav = document.querySelector(".mobile-nav-bar");
 const nav_bar_links = document.querySelectorAll("navbar-links");
-const btn_lrn = document.querySelector(".btn-learn");
+
+const btn_signin = document.querySelector(".btn-signup");
+
 const btn_arrow = document.querySelector(".arrow");
 const collapseC = document.querySelector(".content-collapsible");
 
@@ -19,7 +21,8 @@ const toggledownarrow = () => {
 };
 
 mobile_nav.addEventListener("click", () => toggleNavbar());
-btn_lrn.addEventListener("click", () => redirectToMyAccount());
+
+btn_signin.addEventListener("click", () => redirectToMyAccount());
 btn_arrow.addEventListener("click", () => toggledownarrow());
 //sticky navbar
 const section_hero = document.querySelector(".section-hero");
@@ -67,4 +70,11 @@ var typed = new Typed("#element2", {
     "Track your workout schedule",
   ],
   typeSpeed: 80,
+});
+
+
+$(document).ready(function(){
+$(".counter").counterUp({
+  delay:10,time:1200
+});
 });
