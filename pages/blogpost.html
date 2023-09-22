@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlogPost</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">MyHealthStats</div>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li>
+                    <a href="">health tools</a>
+                    <ul class="dropdown">
+                        <li><a href="#">BMI calculator</a></li>
+                        <li><a href="#">Calorie calculator</a></li>
+                        <li><a href="#">ideal weight calculator</a></li>
+                        <li><a href="#">body fat calculator</a></li>
+                        <li><a href="#">Protein Intake calculator</a></li>
+                        <li><a href="#">Body type calculator</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="#last-navi">Contact</a></li>
+
+                <li><button id="btn-login">Sign in</button></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-nav-bar">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </header>
+
+    <main>
+        <section class="blogpost">
+            <div class="container">
+                <div class="author">
+                    <p>Author | Sep 10</p>
+                </div>
+                <div class="heading">
+                    <h2>
+                        "The Ultimate Guide to Belly Fat Reduction: Tips for a Trim and
+                        Healthy Midsection"
+                    </h2>
+                </div>
+                <div class="image">
+                    <img src="https://www.india.com/wp-content/uploads/2020/10/Belly-fat.jpg" alt="blog image" />
+                </div>
+                <div class="main-blog">
+                    <p>
+                        Belly fat, often referred to as visceral fat, is not just a
+                        cosmetic concern; it's a health issue that affects millions of
+                        people worldwide. Excess abdominal fat is linked to a higher risk
+                        of heart disease, type 2 diabetes, and other chronic health
+                        conditions. If you're looking to shed those extra inches from your
+                        midsection and improve your overall health, you've come to the
+                        right place. In this comprehensive guide, we'll explore effective
+                        strategies for belly fat reduction and offer practical tips to
+                        help you achieve a trim and healthy waistline.
+                    </p>
+                    <h3>Understanding Belly Fat</h3>
+                    <p> Before we dive into the strategies, it's essential to understand
+                        the different types of belly fat:
+                    <ul>
+                        <li>
+                            Subcutaneous Fat: This is the fat located just beneath the skin.
+                            While it contributes to a soft and jiggly appearance, it's not
+                            as harmful to health as visceral fat.
+                        </li>
+                        <li>
+                            Visceral Fat: This is the deeper fat that surrounds your
+                            internal organs, and it's the more dangerous type of belly fat.
+                            High levels of visceral fat are associated with increased health
+                            risks.
+                        </li>
+                    </ul>
+                    </p>
+
+                    <h3>Effective Strategies for Belly Fat Reduction</h3>
+                    <p>
+                        1. Balanced Diet:<br>
+
+                        A healthy eating plan is the foundation of belly fat reduction. Focus on: <br>
+
+                        Whole Foods: Incorporate plenty of fruits, vegetables, lean proteins, whole grains, and healthy
+                        fats into your diet.
+                        Portion Control: Be mindful of portion sizes to avoid overeating.
+                        Limit Sugar and Processed Foods: Cut back on sugary drinks, sweets, and processed foods, as they
+                        can contribute to belly fat.
+
+
+                        2. Regular Exercise:
+                        Physical activity plays a crucial role in burning calories and reducing belly fat. Consider:
+
+                        Aerobic Exercise: Activities like brisk walking, jogging, cycling, and swimming can help burn
+                        calories.
+                        Strength Training: Building muscle mass increases your metabolism and helps with fat loss.
+                        Core Workouts: Engage in core-strengthening exercises to tone the abdominal muscles.
+                        3. Stress Management:
+                        Chronic stress can lead to weight gain, especially around the midsection. Incorporate
+                        stress-reduction techniques such as meditation, yoga, and deep breathing exercises into your
+                        daily routine.
+
+                        4. Quality Sleep:
+                        Lack of sleep can disrupt hormones that regulate appetite, leading to weight gain. Aim for 7-9
+                        hours of quality sleep each night to support your weight loss efforts.
+
+                        5. Hydration:
+                        Drink plenty of water throughout the day. Sometimes, thirst is mistaken for hunger, leading to
+                        unnecessary snacking.
+
+                        6. Avoid Liquid Calories:
+                        Limit the consumption of sugary beverages and alcohol, both of which can contribute to abdominal
+                        fat.
+
+                        7. Stay Consistent:
+                        Consistency is key in achieving long-term belly fat reduction. Set realistic goals, stay
+                        committed to your healthy lifestyle, and be patient with your progress.
+                    </p>
+
+                    <h3>Conclusion</h3>
+                    <p>
+                        Reducing belly fat is not an overnight process, but with dedication and the right strategies,
+                        it's entirely achievable. Remember that spot reduction (losing fat from one specific area) is
+                        not realistic; fat loss occurs throughout the body. Focus on overall health, and a trimmer
+                        waistline will be a natural outcome. Start today, make healthy choices, and watch your belly fat
+                        melt away as you embark on your journey to a healthier you. Your future self will thank you for
+                        it!
+                    </p>
+                </div>
+                <button type="button">READ NEXT</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+    }
+
+    header {
+        padding: 0px 40px;
+        height: 80px;
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(3px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .header .logo {
+        color: #ffffff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .navbar-list {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+    }
+
+    .navbar-list li ul {
+        position: absolute;
+        width: 250px;
+        background: rgba(0, 0, 0, 0.629);
+        backdrop-filter: blur(10px);
+        border: 2px solid #080808;
+        list-style: inherit;
+        display: none;
+    }
+
+    .navbar-list li ul li {
+        text-decoration: inherit;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .navbar .navbar-list li:hover ul.dropdown {
+        display: block;
+    }
+
+    .navbar-list li a {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #a0a0a0;
+        transition: 0.3s all linear;
+        position: relative;
+        /* padding: 0; */
+    }
+
+    .navbar-list li a:after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        background-color: #75c20a;
+        left: 0;
+        bottom: -7px;
+    }
+
+    .navbar-list li a:hover::after {
+        width: 100%;
+    }
+
+    .navbar-list :hover {
+        color: #ffffff;
+    }
+
+    .mobile-nav-bar {
+        display: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .mobile-nav-icon {
+        width: 40px;
+        height: 40px;
+        color: #ffffff;
+    }
+
+    .mobile-nav-icon[name="close-outline"] {
+        display: none;
+    }
+
+    #btn-login {
+        width: 100px;
+        padding: 5px;
+        border: 0;
+        border-radius: 5px;
+        font-weight: 500;
+        background-color: #75c20a;
+        text-transform: uppercase;
+        color: white;
+        cursor: pointer;
+        margin-top: -1px;
+    }
+
+    /* blog section */
+    .blogpost {
+        display: flex;
+        flex-direction: column;
+        background-color: #f5f5f5e2;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .blogpost .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        gap: 10px;
+        border:1px solid black;
+        padding: 20px;
+    }
+</style>

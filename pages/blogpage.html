@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/blogpage.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
   <body>
@@ -36,18 +37,94 @@
         <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
       </div>
     </header>
-      <main>
-        <section class="about-image">
-          <div class="wrapper">
-            <div class="heading">
-              <span>BLOG</span>
-              <h1>WELCOME TO FITNESS BLOG</h1>
-              <span>Daily fitness blog</span>
-            </div>
+    <main>
+      <section class="about-image">
+        <div class="wrapper">
+          <div class="heading">
+            <span>BLOG</span>
+            <h1>WELCOME TO FITNESS BLOG</h1>
+            <span>Daily fitness blog</span>
           </div>
-        </section>
-      </main>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </div>
+      </section>
+
+      <section class="section-blog">
+        <!-- data-aos="fade-in" -->
+        <div class="blog-container">
+          <div class="clip-art">
+          </div>
+          <div class="content">
+            <span>September 13,2023</span>
+            <h3 class="title">CORE EXERCISES FOR STABILITY</h3>
+            <p class="span-title">
+              Core exercises for stability are essential for improving posture
+              and preventing injuries. Key exercises include planks, bridges,
+              Russian twists, bird dogs, and ......
+            </p>
+            <button class="btn-cta">Read more</button>
+          </div>
+        </div>
+
+        <div class="blog-container">
+          <div class="clip-art"></div>
+          <div class="content">
+            <span>September 16,2023</span>
+            <h3 class="title">SPOT FAT REDUCTION POSSIBLE?</h3>
+            <p class="span-title">
+              Spot fat reduction is not possible through targeted exercises or
+              treatments. Fat loss occurs gradually across the entire body
+              with...
+            </p>
+            <button class="btn-cta">Read more</button>
+          </div>
+        </div>
+
+        <div class="blog-container">
+          <div class="clip-art"></div>
+          <div class="content">
+            <span>September 20,2023</span>
+            <h3 class="title">Dynamic stretching vs static stretching</h3>
+            <p class="span-title">
+              Dynamic stretching involves active movements that mimic the
+              activity you're about to perform, warming up muscles and
+              increasing range of motion. Static stretching involves holding a
+              stretch for....
+            </p>
+            <button class="btn-cta">Read more</button>
+          </div>
+        </div>
+
+        <div class="blog-container">
+          <div class="clip-art"></div>
+          <div class="content">
+            <span>September 23,2023</span>
+            <h3 class="title">How to reduce belly fat</h3>
+            <p class="span-title">
+              Reducing belly fat is not only about aesthetics but also about
+              improving overall health, as excessive abdominal fat is linked to
+              various health risks, including cardiovascular diseases and
+              diabetes.....
+            </p>
+            <button class="btn-cta">Read more</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        duration: 400,
+        once: false,
+      });
+    </script>
   </body>
 </html>

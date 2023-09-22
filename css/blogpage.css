@@ -96,7 +96,6 @@ header {
 #btn-login {
   width: 100px;
   padding: 5px;
-
   border: 0;
   border-radius: 5px;
   font-weight: 500;
@@ -135,3 +134,83 @@ header {
     letter-spacing: 10px;
   }
   
+
+  .section-blog{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 50px;
+    background: url("../bgimages/gym_interior.jpg") rgba(0, 0, 0, 0.629) no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+
+  .blog-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.274);
+    
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 1.3px rgba(0, 0, 0, 0.075),
+                0px 0px 10px rgba(0, 0, 0, 0.15);
+    min-height: 300px;
+    align-items: center;
+    margin-top: 30px;
+    width: 90%;
+    justify-content: space-evenly;
+
+      .clip-art {
+       height: 250px;
+       width: 400px;
+       background: url(../bgimages/workout-transformed.jpeg) no-repeat;
+       background-size: cover;
+       border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+       
+      }
+
+     
+  
+
+      
+      .content {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+  }
+  
+
+  .content .btn-cta{
+    width: 120px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #74b31d;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .content .btn-cta:hover{
+    background-color: #16e312;
+    
+  }
+
+  .content h3{
+    text-transform: uppercase;
+  }
+
+  .content span{
+    color: rgba(26, 26, 26, 0.9);
+  }
+  
+  .content p{
+    color: rgba(26, 25, 25, 0.897);
+
+  }
