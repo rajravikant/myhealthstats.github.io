@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>My Health Stats</title>
   </head>
@@ -10,23 +11,24 @@
     <!-- =============   NAVBAR - SECTION   =============== -->
 
     <header class="header">
-      <!-- <img src="./bgimages/Pregnant Man.png" alt="website logo" class="logo"> -->
+     
       <div class="logo">MyHealthStats</div>
       <nav class="navbar">
         <ul class="navbar-list">
           <li><a href="#homepage">Home</a></li>
-          <li><a href="#service-s">Services</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="pages/blogpage.html">Blog</a></li>
           <li>
-            <a href="">health tools ></a>
-            <ul>
-              <li><a href="#">Protein </a></li>
-              <li><a href="#">BMI</a></li>
-              <li><a href="#">Body fat</a></li>
+            <a href="">health tools</a>
+            <ul class="dropdown">
+              <li><a href="#">BMI calculator</a></li>
               <li><a href="#">Calorie calculator</a></li>
+              <li><a href="#">ideal weight calculator</a></li>
+              <li><a href="#">body fat calculator</a></li>
+              <li><a href="#">Protein Intake calculator</a></li>
+              <li><a href="#">Body type calculator</a></li>
             </ul>
           </li>
-          <li><a href="#">About</a></li>
+          <li><a href="pages/about.html">About</a></li>
           <li><a href="#last-navi">Contact</a></li>
           <!-- <li><a href="pages/myaccount.html">Account</a></li> -->
           <li><button id="btn-login">Sign in</button></li>
@@ -79,7 +81,7 @@
             or overall well-being.</span
           >
         </div>
-        <div class="card-programs">
+        <div class="card-programs" data-aos="fade-left">
           <div class="clip-art"></div>
           <div class="content">
             <h2 class="title">Training</h2>
@@ -99,7 +101,7 @@
           </div>
         </div>
 
-        <div class="card-nutrition card-programs">
+        <div class="card-nutrition card-programs"  data-aos="fade-right" >
           <div class="clip-art"></div>
           <div class="content">
             <h2 class="title">Nutrition</h2>
@@ -115,7 +117,7 @@
           </div>
         </div>
 
-        <div class="card-heath-tools card-programs">
+        <div class="card-heath-tools card-programs" data-aos="fade-left">
           <div class="clip-art"></div>
           <div class="content">
             <h2 class="title">Health Tools</h2>
@@ -135,7 +137,7 @@
           </div>
         </div>
 
-        <div class="card-onlinesupport card-programs">
+        <div class="card-onlinesupport card-programs" data-aos="fade-right">
           <div class="clip-art"></div>
           <div class="content">
             <h2 class="title">Online Support</h2>
@@ -182,20 +184,11 @@
 
       <!-- =============   SECTION TABS -   =============== -->
 
-      <!-- =============   TYPED JS  - SECTION   =============== -->
-
-      <!-- <section class="section-art">
-        <div class="container-hs">
-          <div class="ch-title">BE <br /><span id="element"></span></div>
-        </div>
-      </section> -->
-
-      <!-- =============   TYPED JS  - SECTION   =============== -->
-
+     
       <!-- =============   SERVICE - SECTION   =============== -->
 
       <section class="section-services" id="service-s">
-        <div class="abt-heading">
+        <div class="abt-heading"  >
           <h1>what you will get?</h1>
           <span>
             We offers a wide range of comprehensive fitness guides that cater to
@@ -205,7 +198,7 @@
         </div>
 
         <div class="flex-service">
-          <div class="fitness-guides-container">
+          <div class="fitness-guides-container" >
             <div class="fitness-g-heading">
               <h2>Fitness Guides</h2>
             </div>
@@ -563,6 +556,14 @@
       <!-- =============   SECTION - FOOTER  =============== -->
 
       <!-- =============   SCRIPT LINKING SECTION  =============== -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          offset:300,
+          duration: 1000,
+          once: true,
+        });
+      </script>
       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
       <script
         type="module"

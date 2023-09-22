@@ -21,7 +21,6 @@ body {
 header {
   padding: 0px 40px;
   height: 80px;
-  /* background-color: #0a0a0a; */
   background:rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(3px);
   display: flex;
@@ -60,10 +59,10 @@ header {
 
 .navbar-list li ul {
   position: absolute;
-  width: 200px;
+  width: 250px;
   background: rgba(0, 0, 0, 0.629);
   backdrop-filter: blur(10px);
-  /* border: 2px solid #080808; */
+  border: 2px solid #080808;
   list-style: inherit;
   display: none;
 }
@@ -74,8 +73,11 @@ header {
   width: 100%;
 }
 
-.navbar-list li :hover ul {
-  display: initial;
+
+
+.navbar .navbar-list li:hover ul.dropdown{
+  display: block;
+
 }
 
 .navbar-list li a {
@@ -83,7 +85,7 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   color: #a0a0a0;
-  transition: 0.3s;
+  transition: 0.3s all linear;
   position: relative;
   /* padding: 0; */
 }
